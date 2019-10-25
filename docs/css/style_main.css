@@ -1,0 +1,111 @@
+/* css หน้า index */
+
+body {
+    font-family: 'Athiti', sans-serif;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+
+.mymainmenu {
+    position: fixed;
+    top: 0;
+    z-index: 900;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.mymainmenu h5 {
+    font-size: 1.5em;
+}
+
+.mymainmenu a {
+    color: #000000;
+}
+
+.mymainmenu a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+.myfooter {
+    background-color: #35495e;
+    color: white;
+    font-size: 1.2em;
+}
+
+.icon-totop-hid {
+    /* เลื่อนขึ้นข้างบน */
+    visibility: hidden;
+}
+
+.icon-totop {
+    width: 60px;
+    height: 60px;
+    padding-left: 15px;
+    padding-top: 5px;
+    font-size: 40;
+    color: rgb(84, 228, 247);
+    text-shadow: 2px 2px 4px #000000;
+    position: fixed;
+    right: 70px;
+    bottom: 70px;
+    z-index: 1000;
+    border: 3px solid #fff;
+    border-radius: 30px;
+}
+
+p {
+    font-size: 1.3em;
+}
+
+
+/*  --------------  */
+
+#myBGmain {
+    background-image: url('../img/bg-1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 85%;
+    padding-top: 250px;
+    color: white;
+}
+
+.information {
+    padding: 3%;
+}
+
+.information img {
+    width: 50%;
+    margin: 2%;
+    border-radius: 50%;
+}
+
+.information p {
+    color: white;
+}
+
+.set {
+    border-bottom: 3px solid #f5fbf1;
+}
+
+.information a,
+.set a {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.information a:hover,
+.set a:hover {
+    border-left: 5px solid #87c0cd;
+    padding: 1%;
+    text-decoration: none;
+}
+
+.parallax {
+    background-image: url('../img/parallax2.jpg');
+    min-height: 250px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
