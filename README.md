@@ -20,7 +20,7 @@
 - Pisces – กลุ่มดาวปลาคู่ (ราศีมีน)
 
 ## Our site
-Soon!
+https://vacharavat.github.io/Zodiac.github.io/
 
 ## Special Thanks
 Soon!
