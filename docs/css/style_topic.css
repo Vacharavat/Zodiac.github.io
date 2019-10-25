@@ -1,0 +1,147 @@
+/* css ของหัวข้อใหญ่ 
+หน้า explore, zodiac */
+
+body {
+    font-family: 'Athiti', sans-serif;
+    /* background-image: linear-gradient(-30deg, #1f1f20 0%, #304352 100%); */
+    background-image: linear-gradient(-30deg, #304352 0%, #1f1f20 100%);
+}
+
+.mymainmenu {
+    position: fixed;
+    top: 0;
+    z-index: 900;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.mymainmenu h5 {
+    font-size: 1.5em;
+}
+
+.mymainmenu a {
+    color: #000000;
+}
+
+.mymainmenu a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+.myfooter {
+    background-color: #35495e;
+    color: white;
+    font-size: 1.2em;
+}
+
+.icon-totop-hid {
+    /* เลื่อนขึ้นข้างบน */
+    visibility: hidden;
+}
+
+.icon-totop {
+    width: 60px;
+    height: 60px;
+    padding-left: 15px;
+    padding-top: 5px;
+    font-size: 40;
+    color: rgb(84, 228, 247);
+    text-shadow: 2px 2px 4px #000000;
+    position: fixed;
+    right: 70px;
+    bottom: 70px;
+    z-index: 1000;
+    border: 3px solid #fff;
+    border-radius: 30px;
+}
+
+.myBGsub {
+    background-image: url('../img/subexplore/bgnorth.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40%;
+    padding-top: 250px;
+}
+
+p {
+    font-size: 1.4em;
+}
+
+
+/*  --------------  */
+
+.header {
+    /* หัวข้อใหญ่ */
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.header:hover {
+    border-left: 5px solid #d7f7f5;
+    cursor: pointer;
+}
+
+.sub {
+    /* เนื้อหาในหัวข้อใหญ่ */
+    color: white;
+}
+
+.information {
+    /* เนื้อหา */
+    padding: 1.7%;
+}
+
+.information img {
+    width: 40%;
+}
+
+.information .smimg {
+    width: 50%;
+}
+
+.information h2 {
+    color: #57a99a;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.information h2:hover {
+    color: #537d91;
+    text-shadow: 2px 2px 4px #000000;
+    cursor: pointer;
+}
+
+.nexthead {
+    /* เนื้อหาย่อยๆที่เกี่ยวกับหัวข้อใหญ่ */
+    border-top: 3px solid #f5fbf1;
+    padding: 2%;
+}
+
+.nexthead h3 a {
+    /* เนื้อหาย่อยๆที่เกี่ยวกับหัวข้อใหญ่ */
+    color: #d9d9d9;
+}
+
+.nexthead h3 a:hover {
+    /* เนื้อหาย่อยๆที่เกี่ยวกับหัวข้อใหญ่ */
+    color: #75cac3;
+}
+
+.mylistgroup li {
+    color: #000000;
+    font-size: 1.3em;
+}
+
+.mysubtopic img {
+    width: 60%;
+    border-radius: 50%;
+}
+
+.mysubtopic table td {
+    font-size: 1em;
+    color: white;
+}
+
+.mytable {
+    color: white;
+}

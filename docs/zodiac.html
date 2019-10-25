@@ -1,0 +1,334 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Let's Know Zodiac</title>
+    <!-- bootstrp -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Athiti&display=swap" rel="stylesheet">
+    <!-- own -->
+    <link rel="stylesheet" href="./css/style_topic.css">
+    <link rel="stylesheet" href="./css/fontawesome.min.css">
+    <style>
+        #zodiac {
+            width: 100%;
+            height: 50%;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- menu -->
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 bg-light border-bottom shadow-sm mymainmenu">
+        <h5 class="my-0 mr-md-auto font-weight-normal"><strong>12 จักรราศี</strong></h5>
+        <nav class="my-2 my-md-0 mr-md-3">
+            <button type="button" class="btn btn-light">
+                <a href="index.html">หน้าหลัก</a></button>
+            <div class="btn-group">
+                <div class="btn btn-group">
+                    <a class="btn dropdown-toggle btn-light" data-toggle="dropdown" href="#">สำรวจดวงดาว
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="explore.html">สำรวจดวงดาว</a></li>
+                        <li><a class="dropdown-item" href="starmap.html">วิธีการใช้แผนที่ดาว</a></li>
+                        <li><a class="dropdown-item" href="north.html">วิธีการหาทิศเหนือ</a></li>
+                        <li><a class="dropdown-item" href="skyobject.html">กลุ่มดาวและวัตถุบนท้องฟ้า</a></li>
+                    </ul>
+                </div>
+                <div class="btn btn-group">
+                    <a class="btn dropdown-toggle btn-light" data-toggle="dropdown" href="#">12 จักรราศี
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="zodiac.html">จักรราศี</a></li>
+                        <li><a class="dropdown-item" href="ecliptic.html">เส้นสุริยะวิถี</a></li>
+                        <li><a class="dropdown-item" href="z_mez_aries.html">ราศีเมษ</a></li>
+                        <li><a class="dropdown-item" href="z_ps_taurus.html">ราศีพฤษภ</a></li>
+                        <li><a class="dropdown-item" href="z_mt_gemini.html">ราศีเมถุน</a></li>
+                        <li><a class="dropdown-item" href="z_krk_cancer.html">ราศีกรกฎ</a></li>
+                        <li><a class="dropdown-item" href="z_singh_leo.html">ราศีสิงห์</a></li>
+                        <li><a class="dropdown-item" href="z_gun_virgo.html">ราศีกันย์</a></li>
+                        <li><a class="dropdown-item" href="z_tul_libra.html">ราศีตุลย์</a></li>
+                        <li><a class="dropdown-item" href="z_pj_scorpio.html">ราศีพิจิก</a></li>
+                        <li><a class="dropdown-item" href="z_tn_sagittarius.html">ราศีธนู</a></li>
+                        <li><a class="dropdown-item" href="z_mk_capricorn.html">ราศีมังกร</a></li>
+                        <li><a class="dropdown-item" href="z_kump_aquarius.html">ราศีกุมภ์</a></li>
+                        <li><a class="dropdown-item" href="z_mean_pisces.html">ราศีมีน</a></li>
+                    </ul>
+                </div>
+            </div>
+            <button type="button" class="btn btn-light">
+                <a href="about.html">เกี่ยวกับเราและสมาชิก</a></button>
+        </nav>
+    </div>
+    <!-- xxxxx -->
+
+    <canvas id="zodiac"></canvas>
+
+    <div class="container mt-5 information">
+        <div class="information">
+            <h1 class="header text-left">จักรราศีคืออะไร</h1>
+            <div class="sub mt-5 mb-5 text-center">
+                <p class="text-left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;จักรราศีในทางดาราศาสตร์ คือกลุ่มดาวที่<strong> <a href="ecliptic.html">เส้นสุริยวิถี (Ecliptic)</a> </strong>พาดผ่าน อธิบายคือกลุ่มดาวที่ดวงอาทิตย์ เคลื่อนที่ผ่านจนครบรอบ 1 ปี และสำหรับดาวเคราะห์ที่โคจรรอบดวงอาทิตย์
+                    ย่อมเคลื่อนที่ตามเส้นสุริยวิถีด้วย นักดูดาวจึงใช้กลุ่มดาวจักรราศีเป็นหลักในการดูดาวเคราะห์นั่นเอง
+                </p>
+                <br>
+                <p class="text-left">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ในสมัยก่อนวิชาดาราศาสตร์กับโหราศาสตร์ยังไม่แยกจากกันชัดเจน คนโบราณจับเอากลุ่มดาวที่เห็นได้ชัดบน ท้องฟ้ามาแบ่งเป็น 12 กลุ่มดาวเป็นหลักการแบ่งท้องฟ้า คือให้พื้นที่แต่ละกลุ่มดาวครอบคลุมพื้นที่ 30 องศา ทำให้ดวงอาทิตย์อยู่ในแต่ละกลุ่มดาวนานประมาณ
+                    30 วันเท่าๆ กัน ทุกอย่างดูลงตัว เพราะเมื่อรวม 12 กลุ่ม ดาวแล้วก็จะมีพื้นที่ครบ 360 องศา และ 365 วันใน 1 ปี</p>
+                <br>
+                <img src="./img/ex_zo/constellations2.jpg" alt="constellation2">
+                <br>
+            </div>
+            <h1 class="header text-left">กลุ่มดาวจักรราศีมีความสัมพันธ์กับชื่อเดือนอย่างไร ?</h1>
+            <div class="sub mt-5 mb-5 text-center">
+                <p class="text-left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;เส้นทางที่ดวงอาทิตย์โคจรไปบน ท้องฟ้าพาดผ่านกลุ่มดาวต่างๆ ในรอบ 1 ปีนั้น เรียกว่า<strong> <a href="ecliptic.html"> ‘Ecliptic หรือ เส้นสุริยะวิถี’ </a>โดยมันจะพาดจากทิศตะวันออก ผ่านท้องฟ้า ไปทางขอบฟ้าทิศตะวันตก ไม่ว่าจะ ดวงอาทิตย์
+                    , ดวงจันทร์ และ ดวงดาวนพเคราะห์ ต่างก็เคลื่อนตัวตามเส้น Ecliptic นี้ทั้งนั้น สำหรับดาวพลูโต ความเอียงของเส้นวงโคจรมีค่ามาก จึงอยู่ห่างจากสุริยวิถี
+                </p>
+                <br>
+                <img src="./img/ex_zo/ecliptic.jpg" alt="ecliptic">
+                <br>
+                <br>
+                <p class="text-left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;โดยกลุ่มดาว 12 ราศี ก็คือ กลุ่มดาวฤกษ์จำนวน 12 กลุ่ม
+                    ซึ่งปรากฏอยู่ตามแนวเส้น Ecliptic นี่เอง โดยต้อง แบ่งแถบเส้น Ecliptic อันเป็นแถบกว้างจำนวน 16 องศา
+                    โดยกว้างเริ่มจากเส้น Ecliptic ไปข้างละ 8 องศา
+                    นัก ดาราศาสตร์แบ่งรอบท้องฟ้าออกเป็นทั้งหมด 12 ส่วน ในแต่ละส่วนห่างกัน 30 องศา ทุกๆราศี มีดาวฤกษ์ประจำ อยู่ 1 กลุ่ม
+                    ทำให้เรียกว่ากลุ่มดาว 12 ราศี</p>
+                <br>
+                <p class="text-left">&nbsp;&nbsp;เวลาคุณมองขึ้นไปในท้องฟ้าจากบนโลก คุณจะเห็นกลุ่มดาว 12 ราศี เรียงตามลำดับ โดยเริ่มจากทิศตะวันตกไปยังทิศตะวันออก กลุ่มดาว 12 ราศีนี้ คือ จักรวงกลมของบรรดาสัตว์ ทั้งปวง โดย 11 กลุ่ม คือ กลุ่มดาวที่ แทนสัตว์จริงหรือสัตว์ในจินตนาการ
+                    นอกจากนี้ยังมีกลุ่มดาวที่ไม่ใช่สัตว์ นั่นก็คือ กลุ่มดาวราศีตุลย์หรือ กลุ่มดาวคันชั่ง ที่หมายถึงตราชั่งแห่งความยุติธรรม</p>
+                <br>
+                <p class="text-left">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ย้อนไปเมื่อประมาณ 150 ปีก่อนคริสตศักราช นักดาราศาสตร์ชาวกรีกท่านหนึ่งผู้มีนามว่า Hipparchus ได้ ทำการแบ่งกลุ่มดาวบริเวณเส้น Ecliptic ออกเป็น 12 กลุ่ม
+                </p>
+                <br>
+                <img src="./img/ex_zo/hipparchos.jpg" alt="Hipparachos">
+                <br>
+                <br>
+                <p class="text-left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;โดยเริ่มตั้งแต่จุด Vernal Equinox อันเป็นจุดตัด ณ จุดแรกของเส้น
+                    Ecliptic กับศูนย์สูตรท้องฟ้า โดยเมื่อคุณเริ่มจากจุด Vernal Equinox จากแถบเส้น Ecliptic ไป ทางทิศตะวันออก
+                    เป็นจำนวนช่องละ 30 องศา ก็จะได้
+                    12 ช่องพอดี สำหรับช่องแรก คือ ราศีเมษแห่งกลุ่มดาว แกะ โดยกลุ่มดาวกลุ่มนี้ขึ้นชื่อว่าเป็น ‘ผู้นำแห่งกลุ่มดาว 12 ราศี’
+                    โดยกลุ่มดาวราศี 12 คือ กลุ่มดาวปลา – ราศี มีนนั่นเอง
+                </p>
+                <br>
+                <img src="./img/ex_zo/constellations3.jpg" alt="constellations3">
+                <br>
+                <br>
+                <p class="text-left">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;แนวคิดแบ่งเส้นสุริยวิถีกลายเป็นจักรราศี เริ่มต้นในยุค Babylonia วิชาดาราศาสตร์ในช่วงครึ่งแรกของเมื่อ 1,000 ปีก่อนมีความคล้ายคลึงกับช่วงกลางหรือ Babylonia ใหม่ แต่ถึงกระนั้นก็ตามกลุ่มดาวบางกลุ่มปรากฏ ให้เห็นย้อนหลังไปได้ถึงยุคสำริด
+                    หรือ Babylonia เก่า รวมทั้งกลุ่มดาวคนคู่ – ราศีมิถุน และกลุ่มดาวปู – ราศี กรกฎ ด้วย</p>
+                <br>
+                <h1 class="header text-left">อย่าสับสนกับจักรราศีทางโหราศาสตร์</h1>
+                <div class="sub mt-5 mb-5 text-center">
+                    <p class="text-left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;อย่าเอาดาราศาสตร์ Astronomy มาปนกับโหราศาสตร์ Astrology นะเห้ย
+                        แค่จุดมุ่งหมายของทั้งคู่ก็ไปคนละ
+                        ทางแล้ว ดาราศาสตร์มุ่งศึกษาวัตถุท้องฟ้าด้วยหลักการทางวิทยาศาสตร์ แต่โหราศาสตร์คือเน้นทำนายดวง
+                        ชะตาชีวิตคนโดยใช้กลุ่มดาวเป็นเครื่องมือ แต่ไม่มีหลักการวิทยาศาสตร์รองรับใด ๆ ทั้งสิ้น
+                    </p>
+                    <br>
+                    <img src="./img/ex_zo/astrology.jpg" alt="astrology">
+                    <br>
+                    <br>
+                    <p class="text-left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;อย่าลืมว่าดวงดาวราศีไม่ได้กำหนดชีวิตคุณ
+                        แต่คุณต่างหากที่กำหนดชีวิตของตัวเอง เพราะพี่ตูนกล่าวไว้ว่า
+                        “ชีวิตจะเป็นแบบไหน คงต้องเลือกเอา … ก็ชีวิตมันเป็นของเรา”
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row nexthead text-center">
+            <div class="col-md-6 offset-md-3">
+                <h3><a class="nav-link active" href="ecliptic.html">เส้นสุริยะวิถี คืออะไร <span class="badge badge-success">?!</span></a>
+                </h3>
+            </div>
+        </div>
+    </div>
+
+<div class="icon-totop icon-totop-hid">
+    <a class="soft-scroll"><i class="fa fa-angle-double-up"></i></a>
+</div>
+    <footer class="page-footer font-small blue myfooter">
+        <div class="footer-copyright text-center py-3">© 2019 Web Technology IT KMITL</div>
+    </footer>
+
+
+    <!-- script header-->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./js/scall.js"></script>
+
+    <!-- script header-->
+    <script>
+        "use static";
+        var Zodiac = (function() {
+            function Zodiac(canvas, options) {
+                if (options === void 0) {
+                    options = {};
+                }
+                this.options = {
+                    direction: [0, 0],
+                    velocity: [
+                        [.1, 0.3],
+                        [.1, .3]
+                    ],
+                    bounce: [true, true],
+                    parallax: .2,
+                    density: 5000,
+                    proximity: 50,
+                    //dotColor: '#aaa',
+                    dotRadius: [1, 5],
+                    lineColor: '#aaa',
+                    lineWidth: 1,
+                };
+                var canvas = (typeof canvas == 'string' || canvas instanceof String) ? document.getElementById(canvas) : canvas;
+                if (canvas.tagName != 'CANVAS')
+                    throw "no canvas";
+                for (var key in options) {
+                    this.options[key] = options[key];
+                }
+                options = this.options;
+                var ctx = canvas.getContext('2d', {
+                        alpha: !options.backgroundColor
+                    }),
+                    particles = [],
+                    tilt = [0, 0],
+                    radius = [].concat(options.dotRadius),
+                    parallax = options.parallax / 2 / (radius[1] ? (radius[1] - radius[0]) : radius[0]);
+                var update = function() {
+                    var w = canvas.width,
+                        h = canvas.height;
+                    if (options.backgroundColor) {
+                        ctx.fillStyle = options.backgroundColor;
+                        ctx.fillRect(0, 0, w, h);
+                        ctx.fillStyle = options.dotColor;
+                    } else {
+                        ctx.clearRect(0, 0, w, h);
+                    }
+                    ctx.beginPath();
+                    for (var i = 0, p, x, y; i < particles.length; i++) {
+                        p = particles[i];
+                        /* MOVE */
+                        p[1] += p[3];
+                        p[2] += p[4];
+                        /* POSITION */
+                        if (options.parallax) {
+                            var fac = p[0] * parallax;
+                            p[5] += (tilt[0] * fac - p[5]) / 10;
+                            p[6] += (tilt[1] * fac - p[6]) / 10;
+                        }
+                        x = p[1] + p[5];
+                        y = p[2] + p[6];
+                        if (x < 0 || x > w)
+                            (options.direction[0]) ? (p[1] = ((x + w) % w) - p[5]) : (p[3] = -p[3]);
+                        if (y < 0 || y > h)
+                            (options.direction[1]) ? (p[2] = ((y + h) % h) - p[6]) : (p[4] = -p[4]);
+                        var r = radius[1] ? p[0] : radius[0];
+                        /* DRAW */
+                        ctx.moveTo(x + r, y);
+                        ctx.arc(x, y, r, 0, Math.PI * 2);
+                        for (var j = i - 1; j >= 0; j--) {
+                            var q = particles[j],
+                                dx = q[1] - p[1],
+                                dy = q[2] - p[2],
+                                dist = Math.sqrt((dx * dx) + (dy * dy));
+                            if (dist < options.proximity) {
+                                var x = p[1] + p[5],
+                                    y = p[2] + p[6],
+                                    x2 = q[1] + q[5],
+                                    y2 = q[2] + q[6],
+                                    a = Math.atan2(y2 - y, x2 - x),
+                                    r2 = radius[1] ? q[0] : radius[0],
+                                    cos = Math.cos(a),
+                                    sin = Math.sin(a);
+                                x += r * cos;
+                                y += r * sin;
+                                x2 -= r2 * cos;
+                                y2 -= r2 * sin;
+                                ctx.moveTo(x, y);
+                                ctx.lineTo(x2, y2);
+                            }
+                        }
+                    };
+                    ctx.stroke();
+                    options.dotColor && ctx.fill();
+                    requestAnimationFrame(update);
+                };
+                var onMousemove = function(ev) {
+                    tilt[0] = ev.pageX - window.innerWidth / 2;
+                    tilt[1] = ev.pageY - window.innerHeight / 2;
+                };
+                var onOrientation = function(ev) {
+                    tilt[0] = Math.min(Math.max(-ev.beta, -30), 30) * (window.innerWidth / 30);
+                    tilt[1] = Math.min(Math.max(-ev.gamma, -30), 30) * (window.innerHeight / 30);
+                };
+                var onResize = function() {
+                    var w = canvas.width = canvas.offsetWidth,
+                        h = canvas.height = canvas.offsetHeight,
+                        v = options.velocity,
+                        d = options.direction,
+                        random = Math.random;
+                    var num = Math.ceil((w * h) / options.density);
+                    for (var i = particles.length - 1; i >= 0; i--)
+                        if (particles[i][1] > w || particles[i][2] > h)
+                            particles.splice(i, 1);
+                    if (num < particles.length)
+                        particles.splice(num);
+                    while (num > particles.length)
+                        particles.push([
+                            Math.ceil(radius[1] ? (random() * (radius[1] - radius[0]) + radius[0]) : random() * radius[0]),
+                            Math.ceil(random() * w),
+                            Math.ceil(random() * h),
+                            (d[0] || ((random() > .5) ? 1 : -1)) * (random() * (v[0][1] - v[0][0]) + v[0][0]),
+                            (d[1] || ((random() > .5) ? 1 : -1)) * (random() * (v[1][1] - v[1][0]) + v[1][0]),
+                            0,
+                            0
+                        ]);
+                    ctx.strokeStyle = options.lineColor;
+                    ctx.fillStyle = options.dotColor;
+                    ctx.lineWidth = options.lineWidth;
+                };
+                window.addEventListener('resize', onResize, false);
+                document.addEventListener('mousemove', onMousemove, false);
+                window.addEventListener('deviceorientation', onOrientation, false);
+                onResize();
+                update();
+            }
+            return Zodiac;
+        })();
+
+
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            new Zodiac('zodiac', { // HTMLCanvasElement or id
+                direction: [0, 0], // [dirX (-1:left,0:random,1:right),dirX (-1:up,0:random,1:down)]
+                velocity: [
+                    [.25, .5],
+                    [.25, .5]
+                ], // [[velXmin,velXmax],[velYmin,velYmax]]
+                bounce: [true, true], //[bounceTopBottom,bounceLeftRight]
+                parallax: .1, // float [0-1...]; 0 no paralax; 1 move one vw
+                density: 36000, // px^2
+                proximity: 72, // px
+                dotRadius: [1, 10], // float or [float(min),float(max)]
+                //dotColor: '#f53b57',
+                lineColor: '#f53b57',
+                lineWidth: 1,
+                //backgroundColor: 'rgba(20,20,20,.3)', // default transparent; use alpha value for motion blur and ghosting
+            });
+        }, false);
+    </script>
+</body>
+
+</html>
